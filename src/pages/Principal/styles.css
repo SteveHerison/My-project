@@ -1,9 +1,10 @@
 .principal {
-  height: calc(100vh - 80px);
+  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f9f9f9;
 }
 
 .primeira {
@@ -11,7 +12,7 @@
   align-items: flex-start;
   flex-direction: column;
   margin-bottom: 2rem;
-  margin: 0 11%;
+  margin: 0 2rem;
 }
 
 .Perfil {
@@ -30,8 +31,10 @@
   display: flex;
   justify-content: center;
 }
+
 .sobre {
-  max-width: 50rem;
+  max-width: 100%;
+  width: 100%;
   margin-bottom: 2rem;
   text-align: left;
 }
@@ -76,7 +79,7 @@
 
 .skills ul {
   display: flex;
-  gap: 30px;
+  gap: 25px;
   list-style: none;
 }
 
@@ -102,6 +105,155 @@
   color: #2d2e32;
   font-family: Mulish, sans-serif;
   font-weight: 600;
-  margin-right: 3rem;
+  margin-right: 4rem;
   padding-right: 1rem;
+}
+
+@media (max-width: 900px) {
+  .principal {
+    height: 120vh;
+  }
+  .primeira {
+    align-items: center;
+    padding: 4rem 2.7rem;
+  }
+
+  .perfil-container {
+    margin-bottom: 20px;
+  }
+  .Perfil {
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .perfil-img {
+    height: 22rem;
+    width: 42rem;
+    object-fit: cover;
+  }
+
+  .primeira h1 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .conteudo-container {
+    text-align: center;
+  }
+
+  .sobre {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .sobre-mim {
+    margin-bottom: 20px;
+  }
+
+  .sobre-links {
+    gap: 20px;
+  }
+
+  .hard-skill {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hard-skill p {
+    border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+    border-right: none;
+    margin-bottom: 2rem;
+    margin-right: 0;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    padding-right: 0;
+  }
+
+  .skills ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 12rem;
+    gap: 10px;
+  }
+
+  .skills ul li {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 620px) {
+  .principal {
+    height: 120vh;
+  }
+  .primeira {
+    align-items: center;
+    padding: 4rem 2.7rem;
+  }
+
+  .perfil-container {
+    margin-bottom: 20px;
+  }
+  .Perfil {
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .perfil-img {
+    height: 22rem;
+    width: 42rem;
+    object-fit: cover;
+  }
+
+  .primeira h1 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .conteudo-container {
+    text-align: center;
+  }
+
+  .sobre {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .sobre-mim {
+    margin-bottom: 20px;
+  }
+
+  .sobre-links {
+    gap: 20px;
+  }
+
+  .hard-skill {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hard-skill p {
+    border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+    border-right: none;
+    margin-bottom: 2rem;
+    margin-right: 0;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    padding-right: 0;
+  }
+
+  .skills ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 16.5rem;
+    gap: 10px;
+  }
+
+  .skills ul li {
+    margin: 0 auto;
+  }
 }

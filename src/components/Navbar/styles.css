@@ -1,12 +1,20 @@
 .container-nav {
-  height: 80px;
+  height: 60px;
   width: 100%;
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 40px;
   color: rgb(0, 0, 0);
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+
+  position: fixed;
+}
+.container-nav h3 {
+  color: #2d2e32;
+  cursor: pointer;
 }
 
 .menu {
@@ -21,8 +29,12 @@
   gap: 40px;
 }
 
-.menu ul li {
+.menu ul li a {
   cursor: pointer;
+  color: #2d2e32;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.23s;
 }
 
 .menu button {
@@ -37,11 +49,6 @@
   color: rgb(0, 0, 0);
 }
 
-.menu button:hover {
-  background-color: rgb(151, 151, 151);
-  color: rgb(14, 202, 7);
-}
-
-.menu ul li:hover {
-  color: rgb(14, 202, 7);
+.menu ul li a:hover {
+  color: rgb(7, 121, 252);
 }

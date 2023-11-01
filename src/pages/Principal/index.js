@@ -1,10 +1,20 @@
+import React from "react";
 import "./styles.css";
 import Navbar from "../../components/Navbar/index.js";
 import Perfil from "../../Assets/Design sem nome (3).png";
 
+const skills = [
+  "html,css",
+  "js,ts",
+  "react,nodejs",
+  "git,github",
+  "figma",
+  "postgres",
+];
+
 export default function Principal() {
   return (
-    <div className="container-prin">
+    <div className="container-prin" id="home">
       <Navbar />
       <section className="principal">
         <div className="primeira">
@@ -13,7 +23,10 @@ export default function Principal() {
               <h1>
                 Full Stack
                 <br /> Developer{" "}
-                <img src="https://www.stefantopalovic.com/static/media/waving.1bae5fcfb51082b5c2b4.png" />
+                <img
+                  src="https://www.stefantopalovic.com/static/media/waving.1bae5fcfb51082b5c2b4.png"
+                  alt="wave"
+                />
               </h1>
 
               <p className="sobre-mim">
@@ -34,10 +47,10 @@ export default function Principal() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="tabler-icon tabler-icon-brand-linkedin"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="tabler-icon tabler-icon-brand-linkedin"
                   >
                     <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
                     <path d="M8 11l0 5"></path>
@@ -59,58 +72,30 @@ export default function Principal() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="tabler-icon tabler-icon-brand-github"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="tabler-icon tabler-icon-brand-github"
                   >
                     <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
                   </svg>
                 </a>
               </div>
             </div>
-            <img src={Perfil} className="perfil-img" />
+            <img src={Perfil} alt="perfil" className="perfil-img" />
           </div>
           <div className="hard-skill">
             <p>Hard Skills</p>
             <div className="skills">
               <ul>
-                <li>
-                  <img
-                    src="https://skillicons.dev/icons?i=html,css"
-                    alt="skill-icon"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="https://skillicons.dev/icons?i=js,ts"
-                    alt="skill-icon"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="https://skillicons.dev/icons?i=react,nodejs"
-                    alt="skill-icon"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="https://skillicons.dev/icons?i=git,github"
-                    alt="skill-icon"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="https://skillicons.dev/icons?i=figma"
-                    alt="skill-icon"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="https://skillicons.dev/icons?i=postgres"
-                    alt="skill-icon"
-                  />
-                </li>
+                {skills.map((skill, index) => (
+                  <li key={index}>
+                    <img
+                      src={`https://skillicons.dev/icons?i=${skill}`}
+                      alt="skill-icon"
+                    />
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
