@@ -1,0 +1,11 @@
+.container-contato {
+  height: 100vh;
+  width: 100vw;
+  padding: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(24, 204, 8);
+}

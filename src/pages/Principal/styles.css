@@ -1,8 +1,107 @@
-.container-prin {
-  min-height: calc(100vh - 80px);
+.principal {
+  height: calc(100vh - 80px);
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.primeira {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin: 0 11%;
+}
+
+.Perfil {
+  display: flex;
+  gap: 10rem;
+  margin-bottom: 30px;
+}
+
+.perfil-img {
+  height: 33rem;
+  width: 22rem;
+  object-fit: cover;
+}
+
+.h1 {
+  display: flex;
+  justify-content: center;
+}
+.sobre {
+  max-width: 50rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.primeira h1 {
+  color: #2d2e32;
+  font-size: 5rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  margin-top: 7rem;
+}
+
+.primeira p {
+  color: #555;
+  font-family: Mulish, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  flex-basis: 100%;
+}
+
+.sobre-mim {
+  margin-bottom: 20px;
+}
+
+.sobre img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.sobre-links {
+  display: flex;
+  gap: 10px;
+}
+.sobre-links a {
+  color: #2d2e32;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+}
+
+.skills ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.skills ul li {
+  cursor: pointer;
+}
+
+.skills ul li img {
+  transition: all 0.3s ease-in-out;
+}
+
+.skills ul li img:hover {
+  transform: translateY(-10px);
+}
+
+.hard-skill {
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+.hard-skill p {
+  border-right: 2px solid rgba(45, 46, 50, 0.5);
+  color: #2d2e32;
+  font-family: Mulish, sans-serif;
+  font-weight: 600;
+  margin-right: 3rem;
+  padding-right: 1rem;
 }

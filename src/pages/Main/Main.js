@@ -1,17 +1,15 @@
+import React from "react";
 import "./styles.css";
-import SingIn from "../SignIn";
-import SingUp from "../SignUp";
-import { Routes, Route } from "react-router-dom";
-import Navbar from "../../components/Navbar/index";
+import Login from "./../Login/index";
+import Principal from "../Principal";
+import Contato from "../Contato";
 
 function Main() {
   return (
-    <div className="container-main">
-      <Navbar />
-      <Routes>
-        <Route path="/SingIn" element={<SingIn />} />
-        <Route path="/SingUp" element={<SingUp />} />
-      </Routes>
+    <div>
+      <Principal />
+      <Login />
+      <Contato />
     </div>
   );
 }

@@ -1,18 +1,16 @@
 import "./styles.css";
-import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Navbar() {
   return (
-    <navbar className="container-nav">
-      <h1>LoGO</h1>
+    <nav className="container-nav">
+      <h1>Steve.dev</h1>
       <div className="menu">
-        <Link to="">Sobre</Link>
-        <Link to="">Contato</Link>
-        <button>
-          {" "}
-          <Link to="/SingIn">Login</Link>
-        </button>
+        <ul>
+          <li>Descrição</li>
+          <li>Projetos</li>
+          <li>Contato</li>
+        </ul>
       </div>
-    </navbar>
+    </nav>
   );
 }
