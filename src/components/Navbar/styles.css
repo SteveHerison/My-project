@@ -1,6 +1,6 @@
 .container-nav {
   height: 60px;
-  width: 100%;
+  width: 100vw;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
@@ -51,4 +51,11 @@
 
 .menu ul li a:hover {
   color: rgb(7, 121, 252);
+}
+
+@media (max-width: 900px) {
+  .container-nav {
+    height: 35px;
+    width: 100%;
+  }
 }

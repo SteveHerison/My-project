@@ -1,11 +1,72 @@
-.container-login {
-  height: 100vh;
+.container-sobre {
+  background-color: #fff;
+  height: auto;
   width: 100vw;
-  padding: 40px;
+  padding: 15rem 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background-color: aqua;
+  -pointer-events: none;
+}
+
+.text-side {
+  margin: 0 10rem;
+  max-width: 54rem;
+  padding-right: 1.5rem;
+}
+
+.text-side p {
+  color: #767676;
+  font-family: Mulish, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.text-side h4 {
+  color: #2d2e32;
+  font-family: Poppins, sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.text-side h3 {
+  color: #147efb;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1020px) {
+  .container-sobre {
+    text-align: center;
+    flex-direction: column;
+  }
+  .text-side {
+    max-width: 54rem;
+  }
+}
+@media (max-width: 900px) {
+  .container-sobre {
+    text-align: center;
+    flex-direction: column;
+  }
+  .text-side {
+    max-width: 54rem;
+  }
+}
+@media (max-width: 877px) {
+  .container-sobre {
+    padding: 10rem 0;
+    text-align: center;
+    flex-direction: column;
+  }
+  .text-side {
+    margin: 0 auto;
+    max-width: 54rem;
+  }
 }
