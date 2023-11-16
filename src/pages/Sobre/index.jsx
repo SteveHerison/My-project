@@ -1,10 +1,10 @@
 import "./styles.css";
-import Animations from "../../components/Animation";
+import AnimationSobre from "../../components/Animation/sobre";
 
 export default function Sobre() {
   return (
     <div className="container-sobre" id="sobre">
-      <Animations />
+      <AnimationSobre />
       <div class="text-side">
         <h3>SOBRE MIM</h3>
         <h4>Um Desenvolvedor Full Stack</h4>

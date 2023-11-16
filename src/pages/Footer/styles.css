@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #2d2e32;
+  color: white;
+  padding: 4rem 0;
+  width: 100vw;
+}
+
+.descricao {
+  display: flex;
+  align-items: center;
+  gap: 50rem;
+}
+
+.sobre-links a {
+  color: aliceblue;
+}
+
+.contact__title h3 {
+  font-size: 2rem;
+}
+
+.contact__title p {
+  color: #147efb;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.contact__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rem;
+  margin-top: 6rem;
+}
+
+.correio a {
+  text-decoration: none;
+  color: white;
+}
