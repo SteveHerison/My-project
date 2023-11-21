@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="contato">
           <div class="contact__title">
             <p>contato</p>
-            <h3>Não seja tímido! Bateu em mim! 👇</h3>
+            <h3>Entre em contato! 👇</h3>
           </div>
 
           <div class="contact__info">
