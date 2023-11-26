@@ -3,8 +3,8 @@ import Lottie from "react-lottie";
 import Pc from "../../Assets/Pc.json";
 
 export default function AnimationSobre() {
-  const [isStopped, setIsStopped] = useState(false);
-  const [isPaused, setIsPaused] = useState(false);
+  const [isStopped] = useState(false);
+  const [isPaused] = useState(false);
 
   const defaultOptions = {
     loop: true,
